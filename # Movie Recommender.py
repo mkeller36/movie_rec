@@ -28,13 +28,7 @@ if path.exists("FavoriteMovies.csv") == 0:
 # open movie list 
 import pandas as pd #makes function pandas called useing pd 
 # problem below, says path does not exist - fixed by writing path, use / instead of \
-df = pd.read_csv ('c:/Users/Keller/Desktop/Learning/Projects/FavoriteMovies.csv')  
-
-########################################### Code for class #######################################
-
-movienames = df.loc[:,'Title']
-
-########################################### Code for class #######################################
+df = pd.read_csv ('FavoriteMovies.csv')  
 
 # removes title row from DataFrame - only needed if name is in first row and coloum 
 # df = df.drop(df.index[0]) 
